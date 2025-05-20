@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Critã</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            background-color: rgb(210, 255, 255);
+            font: italic 600 1em 'Work Sans', sans-serif;
+            text-align: center;
+        }
+
+        div {
+            display: inline-block;
+            background-color: rgb(161, 231, 255);
+            border: 1px solid black;
+            text-align: center;
+            height: 300px;/* Altura */
+            width: 300px;/* Largura */
+
+        }
+
+        div:hover {
+            background-color: aqua;
+        }
+
+        .copy {
+            text-decoration: underline;
+            text-shadow: 1px 1px 1px rgb(150, 150, 150);
+        }
+
+        a {
+            color: rgb(0, 110, 77);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:visited { 
+            color: rgb(0, 0, 172);
+        }
+
+        a:hover {
+            color: rgb(0, 166, 243);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(140, 0, 255);
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(153, 153, 153);
+        }
+    </style>
+
+</head>
+<body>
+    <div id="Div"><a href="index02.html">Primeira Pergunta</a></div>
+    <div id="Div2"><a href="index04.html">Segunda Pergunta</a></div>
+    <div id="Div3"><a href="index05.html">Terceira Pergunta</a></div>
+    <p><a href="index.html">Voltar para a página inicial.</a></p>
+    <p><a href="index01.html">Voltar para a página anterior.</a></p>
+    <p class="copy">&copy;IrmãosemCristo</p>
+
+    <script>
+        document.getElementById("Div").addEventListener("click", function () {
+            window.location.href = "file:///home/mardoqueuls/Documentos/Meus%20c%C3%B3digos/Exercic%C3%ADos/estudo%20dos%20guris/index02.html";
+        });
+    document.getElementById("Div2").addEventListener("click", function () {
+        window.location.href = "file:///home/mardoqueuls/Documentos/Meus%20c%C3%B3digos/Exercic%C3%ADos/estudo%20dos%20guris/index04.html";
+    });
+    document.getElementById("Div3").addEventListener("click", function () {
+        window.location.href = "file:///home/mardoqueuls/Documentos/Meus%20c%C3%B3digos/Exercic%C3%ADos/estudo%20dos%20guris/index05.html";
+    });
+
+
+    </script>
+</body>
+</html>

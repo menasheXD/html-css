@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+
+        }
+
+        div:hover > p {
+            display: block;
+            color: rgb(0, 97, 65);
+            background-color: rgb(0, 204, 255);
+            }
+        
+
+        div:hover {
+            color: rgb(255, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <!--Para envelopar basta clicar Ctrl, Shift, P -->
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+
+        passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+
+    </div>
+    <P>Fim do exemplo</P>
+</body>
+</html>
