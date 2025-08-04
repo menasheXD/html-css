@@ -26,7 +26,17 @@
     .cor {
         color: white;
         background-color: rgb(95, 95, 95);
+        font-weight: bolder;
     }
+
+    .coluna {
+        font-weight: bolder;
+    }
+
+    .num {
+        text-align: right;
+    }
+    
 
     thead > tr > th {
             font-weight: bold;
