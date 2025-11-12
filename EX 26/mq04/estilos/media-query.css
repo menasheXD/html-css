@@ -15,37 +15,50 @@ Telas grandes (TV): acima de 1200px
 
 @media print {
     body {
-        background-image: url(../imagens/back-print.jpg);
+        background-image: url(../imagens/back-print.jpg);/* desnecessario n aparece na impressao*/
+        font-family: 'Courier New', Courier, monospace;
     }
     #print {
         display: block;
     }
+    #phone {
+        display: none;
+}
 }
 
-@media  screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+@media  screen and (min-width: 768px) and (max-width: 990px) { /* TABLET */
     body {
         background-image: url(../imagens/back-tablet.jpg);
     }
     #tablet {
         display: block;
     }
+    #phone {
+        display: none;
+}
 }
 
 
-@media  screen and (min-width: 992px) and (max-width: 1200) { /* DESKTOP */
+@media  screen and (min-width: 1000px) and (max-width: 1200) { /* DESKTOP */
     body {
         background-image: url(../imagens/back-pc.jpg);
     }
     #pc {
         display: block;
     }
+    #phone {
+        display: none;
+}
 }
 
-@media  screen and (min-width: 1200px) { /* TELAS GRANDES */
+@media  screen and (min-width: 1230px) { /* TELAS GRANDES */
     body {
         background-image: url(../imagens/back-tv.jpg);
     }
     #tv {
         display: block;
     }
+    #phone {
+        display: none;
+}
 }
