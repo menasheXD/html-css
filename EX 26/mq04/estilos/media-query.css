@@ -1,1 +1,51 @@
 @charset "UTF-8";
+
+/* Todas as demais mídias*/
+
+/* Typical Device Brakpoints
+-----------------------------
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Telas grandes (TV): acima de 1200px
+------------------------------
+*/
+
+
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+    #print {
+        display: block;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #tablet {
+        display: block;
+    }
+}
+
+
+@media  screen and (min-width: 992px) and (max-width: 1200) { /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #pc {
+        display: block;
+    }
+}
+
+@media  screen and (min-width: 1200px) { /* TELAS GRANDES */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #tv {
+        display: block;
+    }
+}
