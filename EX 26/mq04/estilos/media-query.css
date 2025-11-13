@@ -4,8 +4,8 @@
 
 /* Typical Device Brakpoints
 -----------------------------
-Pequenas telas: até 600px
-Celular: 600px até 768px
+Pequenas telas: até 578px
+Celular: 578px até 768px
 Tablet: 768px até 992px
 Desktop: 992px até 1200px
 Telas grandes (TV): acima de 1200px
@@ -18,6 +18,22 @@ Telas grandes (TV): acima de 1200px
         background-image: url(../imagens/back-print.jpg);/* desnecessario n aparece na impressao*/
         font-family: 'Courier New', Courier, monospace;
     }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Esse impressão foi feita pelo www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
     #print {
         display: block;
     }
@@ -26,7 +42,7 @@ Telas grandes (TV): acima de 1200px
 }
 }
 
-@media  screen and (min-width: 768px) and (max-width: 990px) { /* TABLET */
+@media  screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
     body {
         background-image: url(../imagens/back-tablet.jpg);
     }
@@ -39,7 +55,7 @@ Telas grandes (TV): acima de 1200px
 }
 
 
-@media  screen and (min-width: 1000px) and (max-width: 1200) { /* DESKTOP */
+@media  screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
     body {
         background-image: url(../imagens/back-pc.jpg);
     }
@@ -51,7 +67,7 @@ Telas grandes (TV): acima de 1200px
 }
 }
 
-@media  screen and (min-width: 1230px) { /* TELAS GRANDES */
+@media  screen and (min-width: 1200px) { /* TELAS GRANDES */
     body {
         background-image: url(../imagens/back-tv.jpg);
     }
