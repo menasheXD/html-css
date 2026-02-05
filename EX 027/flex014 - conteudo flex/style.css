@@ -14,7 +14,13 @@ body {
     width: 100vw;
 }
 
-p, h1, h2 {
+h1, h2 {
+    margin-bottom: 10px;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+p {
     margin-bottom: 10px;
     text-align: justify;
 }
@@ -26,5 +32,38 @@ header, section.normal {
 section.flex-content {
     padding: 20px;
     background-color: rgb(159, 159, 159);
+
+    display: flex;
+    flex-flow: column nowrap;
 }
 
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+article > div.text {
+    flex: 1 1 500px;
+}
+
+article > div.media {
+    flex: 1 0 500px;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    width: 270px;
+    padding-bottom: 10px;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
